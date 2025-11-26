@@ -1,0 +1,51 @@
+body {
+  background-color: #f3e8ff;
+}
+
+.bg-light-purple {
+  background-color: #f3e8ff !important;
+}
+
+.bg-purple {
+  background-color: #6a1b9a !important;
+}
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+.btn-purple {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #8e24aa;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.post-card {
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.post-time {
+  font-size: 0.8rem;
+  color: #555;
+}

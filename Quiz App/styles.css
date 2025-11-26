@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #e6f3ff;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.heading {
+    color: #005c99;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003d66;
+    text-align: left;
+}
+
+#counter {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #003d66;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#questions {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #b5d9f5;
+    margin-bottom: 20px;
+}
+
+.list {
+    text-align: left;
+}
+
+.option {
+    background: #f5faff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cfe9ff;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #d6ecff;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005c99;
+}
+
+.hide {
+    display: none;
+}
+
+#result {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #b5d9f5;
+    font-size: 20px;
+}

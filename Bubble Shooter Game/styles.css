@@ -1,0 +1,84 @@
+:root{
+  --bg: #f3eaff;           /* very light purple */
+  --panel: #efe0ff;        /* card */
+  --accent: #b088ff;       /* purple accent */
+  --muted: #7b6b8f;
+  --text: #2b2540;
+}
+
+*{box-sizing: border-box; margin:0; padding:0; font-family: "Inter", system-ui, Arial, sans-serif;}
+
+body{
+  background: linear-gradient(180deg, var(--bg), #f9f2ff);
+  color: var(--text);
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:24px;
+  min-height:100vh;
+}
+
+.game-wrap{
+  width: 720px;
+  max-width: calc(100% - 40px);
+  background: var(--panel);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(90,60,120,0.12);
+  padding: 18px;
+  border: 1px solid rgba(180,150,255,0.25);
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+h1{
+  font-size:20px;
+  color: var(--accent);
+  letter-spacing: 0.4px;
+}
+
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+#musicToggle{
+  background: linear-gradient(180deg,#fff,#f6ecff);
+  border: 1px solid rgba(160,120,255,0.35);
+  padding:8px 12px;
+  border-radius: 10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+#score{
+  background: rgba(255,255,255,0.6);
+  padding:6px 10px;
+  border-radius:10px;
+  font-weight:700;
+  color:var(--muted);
+}
+
+canvas{
+  display:block;
+  margin: 0 auto;
+  background: radial-gradient(circle at 20% 10%, rgba(255,255,255,0.6), transparent 10%),
+              linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border-radius:12px;
+  width:100%;
+  height:auto;
+  box-shadow: inset 0 -6px 30px rgba(120,80,180,0.03);
+  border: 1px solid rgba(200,180,255,0.25);
+}
+
+footer{
+  margin-top:12px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}

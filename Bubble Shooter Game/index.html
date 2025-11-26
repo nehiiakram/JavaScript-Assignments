@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bubble Shooter — Light Purple Theme</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <header>
+      <h1>Bubble Shooter</h1>
+      <div class="controls">
+        <button id="musicToggle">Play Music</button>
+        <div id="score">Score: 0</div>
+      </div>
+    </header>
+
+    <canvas id="gameCanvas" width="680" height="820"></canvas>
+
+    <footer>
+      <p>Click to shoot — aim with mouse. Pop 3+ same color bubbles. Good luck!</p>
+    </footer>
+
+    <!-- background music: place a file named "music.mp3" in same folder -->
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      <!-- if browser doesn't auto-play, user can hit Play -->
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

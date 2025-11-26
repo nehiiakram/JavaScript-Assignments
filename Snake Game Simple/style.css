@@ -1,0 +1,49 @@
+/* Background and overall setup */
+body {
+  background: rgb(10, 9, 10);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Game title */
+h1 {
+  color: #dae2e4;
+}
+
+/* Game board area */
+#gameCanvas {
+  background: gray;
+  border: 3px solid #293447;
+  display: block;
+  border-radius: 10px;
+  margin: 20px auto; /* centers the box */
+}
+
+/* Score text */
+#score {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #dae2e4;
+}
+
+/* Restart button styling */
+button {
+  background-color: #2ecccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px; /* this pushes it below the box */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #279eae;
+}
