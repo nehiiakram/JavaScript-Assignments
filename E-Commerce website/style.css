@@ -1,0 +1,59 @@
+
+/* General Theme */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Hero Image */
+.hero-image img {
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+/* Modal */
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+.navbar{
+    background-color: #333;
+}
+
+.sendbutton{
+    background-color: #333;
+}
+.modal-header{
+   background-color: #333; 
+}
+
+.navbar-brand{
+  font-family: "Playwrite US Trad Guides";
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px){
+  .hero-image img{
+    height: auto;
+  }
+}

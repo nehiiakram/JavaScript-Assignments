@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Store</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand"; href="#"> Home Decor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <img src="https://t3.ftcdn.net/jpg/05/53/15/36/360_F_553153675_nCuvI9Viauep9g8hTS4IyW75m68No91J.jpg" class="img-fluid w-100" alt="Decorate Your Home with Style">
+  </div>
+
+  <!-- Dropdown Filters -->
+  <div class="container my-4">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <select id="categoryMenu" class="form-select" onchange="categoryChange()">
+          <option selected>Select Category</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select id="itemMenu" class="form-select" onchange="itemChange()">
+          <option selected>Select Item</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select id="optionMenu" class="form-select" onchange="showProduct()">
+          <option selected>Select Design</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="row" id="allProducts"></div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-white">
+          <h5 class="modal-title">Contact Us</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class=" w-100 sendbutton">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
